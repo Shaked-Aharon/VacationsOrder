@@ -1,0 +1,19 @@
+.follow-btn{
+    border-radius: 35px;
+    height: 30px;
+    padding: 5px;
+    margin: 15px;
+    font-size: large;
+    outline: none;
+    line-height: 100%;
+    border: none;
+    position: relative;
+    top: -24px;
+    right: 0px;
+    background-color: lightgrey !important;
+    transform: scale(1.5);
+}
+
+.follow-btn.followed{
+    background-color: rgb(219, 88, 65) !important;
+}

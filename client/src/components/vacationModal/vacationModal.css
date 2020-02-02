@@ -1,0 +1,9 @@
+.modal-body {
+    height: 280px;
+    word-break: keep-all;
+    word-wrap: unset;
+}
+
+.modal-body .input-errors{
+    font-size: small;
+}

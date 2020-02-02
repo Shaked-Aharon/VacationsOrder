@@ -1,0 +1,75 @@
+.home-page .title {
+    height: 120px;
+    text-align: center;
+    position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  /* background-color: rgb(44, 67, 87); */
+  background-color: whitesmoke;
+}
+
+@font-face {
+    font-family: 'myTitle';
+    font-style: normal;
+    font-weight: 300;
+    src: url("./title.ttf");
+    /* IE9 Compat Modes */ }
+
+.home-page .title h1 {
+    font-family: "myTitle";
+    font-size: 70px;
+    color: rgb(44, 67, 87);
+    opacity: .85;
+    letter-spacing: 3px;
+    /* background-color: #60adff; */
+}
+
+.logout {
+    position: absolute;
+    right: 25px;
+    top: 40px;
+    z-index: inherit;
+    background-color: rgb(44, 67, 87);
+}
+
+.logout:hover{
+    background-color: rgb(17, 39, 58);
+}
+
+.home-page  .navbar2 {
+    height: 260px;
+    font-size: 14px;
+    line-height: 1;
+    color: #222;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(68, 137, 194, 0.73)), url("../navbar/navbar.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-position: center center;
+    z-index: 0;
+    position: relative;
+    padding: 68px 0;
+    top: 120px;
+    width: 100%;
+}
+        .navbar2 h2{
+            opacity: .8;
+            font-size: 70px;
+            letter-spacing: 15px;
+            color: rgb(44, 67, 87);
+            font-family: "myTitle";
+            text-align: center;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .nevbar2, .main{
+            padding-top: 102px;
+        }

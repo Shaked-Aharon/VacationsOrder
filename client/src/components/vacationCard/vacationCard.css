@@ -1,0 +1,214 @@
+.vacation-card{
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    box-sizing: border-box;
+    width: 450px;
+    height: 250px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 2px 1px black;
+    padding: 0;
+    /* border-radius: 20px 20px 0px 0px; */
+    border-radius: 40px 0px 40px 40px;
+}
+
+.vacation-img img{
+    z-index: -1;
+    width: 450px;
+    height: 250px;
+    /* border-radius: 20px 20px 0px 0px; */
+    border-radius: 40px 0px 40px 40px;
+}
+.vacation-img{
+    z-index: 0;
+    position: absolute;
+    right: 0;
+}
+
+.vacation-details{
+    /* border-radius: 20px 20px 0px 0px; */
+    /* border-radius: 40px 0px 40px 0px; */
+    border-radius: 0px 0px 40px 40px;
+    transition: height 1s;
+    color: white;
+    z-index: 0;
+    background-color: rgb(44, 67, 87);
+    height: 50px;
+    width: 450px;
+    word-break: break-all;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.79;
+}
+
+.vacation-details button{
+
+    border-radius: 50%;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 18px 0 0 0;
+    font-size: large;
+    outline: none;
+    line-height: 100%;
+    border: none;
+    position: relative;
+    /* top: -8px; */
+    right: 5px;
+    /* background-color: lightgray; */
+    /* visibility: hidden; */
+}
+
+.vacation-details button:active{
+    transform: translate(0px, 1px);
+}
+
+.vacation-card:hover button{
+    visibility: visible;
+    transition: visibility 0s 0.8s, height 0s 0.8s;
+}
+.vacation-card:hover .vacation-details{
+    border-radius: 40px 0px 40px 40px;
+    height: 250px;
+    transition: border-radius .4s .3s, height .6s 0s;
+}
+
+.vacation-card:not(:hover) .vacation-details{
+    border-radius: 0px 0px 40px 40px;
+    height: 60px;
+    transition: border-radius .3s .1s, height .4s 0s;
+}
+
+.more-info {
+    visibility: hidden;
+    height: 0;
+    z-index: 2;
+}
+.card-header{
+    z-index: 2;
+    text-align: center;
+}
+
+.vacation-card:hover .more-info{
+    visibility: visible;
+    height: 100%;
+    transition: visibility 0s 0.8s, height 0s 0.8s;
+}
+
+.vacation-card:not(:hover) .more-info{
+    visibility: hidden;
+    height: 0;
+    transition: visibility 0s 0s, height 0s 0s;
+}
+
+/* .vacation-details .follow{
+    background-color: coral;
+} */
+
+.vacation-details .not-follow{
+    background-color: gray;
+}
+
+.card-header h2{
+    display: inline-block;
+    width: 240px;
+}
+
+.card-header{
+    position: relative;
+    height: 60px;
+}
+
+.card-header .header-btn{
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    color: white;
+
+}
+
+.more-info, .more-info p{
+    font-size: large;
+    opacity: 1;
+    color: white !important;
+}
+
+.more-info .price {
+    color: greenyellow;
+    font-size: 40px;
+    position: absolute;
+    right: 35px;
+    bottom: 15px;
+}
+
+.description {
+    font-size: x-large;
+    font-weight: 500;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.more-info .date .start-date {
+    box-sizing: border-box;
+    background-color: lightcoral;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    float: left;
+    transform: translateY(-15px);
+    font-weight: bold;
+    font-size: large;
+}
+
+.more-info .date .end-date {
+    float: right;
+    box-sizing: border-box;
+    height: 60px;
+    background-color: lightcoral;
+    text-align: center;
+    /* color: black !important; */
+    width: 60px;
+    border-radius: 50%;
+    transform: translateY(-15px);
+    font-weight: bold;
+    font-size: large;
+}
+
+.more-info .date {
+    border-radius: 50px;
+    width: 230px;
+    height: 30px;
+    color:black;
+    background-color: lightgray;
+    position: absolute;
+    left: 35px;
+    bottom: 30px;
+    font-weight: 400;
+}
+
+/* .more-info .date > span {
+    position: absolute;
+    top: 50%;
+} */
+
+/* .delete-modal {
+    box-sizing: border-box;
+    width: 270x;
+    height: 200px;
+} */
+.delete-modal .modal-body {
+    height: 100px !important;
+    text-align: center;
+}
+
+.delete-modal .modal-body button{
+    margin: 15px;
+}
+
+.admin-control {
+    position: relative;
+    top: -25px;
+}

@@ -1,0 +1,40 @@
+.vacation-container{
+    /* background-color: #98caff; */
+    width: 80%;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    position: relative;
+    margin:30px 10% 0 10%;
+    /* background-color: rgb(223, 223, 223);
+    box-shadow: 0 0 15px 0px black; */
+    /* border-radius: 15px; */
+    border-top-left-radius: 15px;
+    padding-top: 35px;
+    z-index: 1;
+}
+.add-button{
+    position: absolute;
+    left:30px;
+    top: -15px;
+    margin: auto;
+    background-color: rgb(44, 67, 87);
+}
+
+.reports-button {
+    position: absolute;
+    left: 200px;
+    top: -15px;
+    margin:auto;
+    background-color: rgb(44, 67, 87);
+}
+
+.add-button:hover, .reports-button:hover{
+    background-color: rgb(9, 27, 42);
+}
+
+.vacation-container { 
+    display: flex;
+    flex-flow:row wrap;
+    justify-content:baseline;}
+.vacation-container .vacation-card.followed { order: 1; }
+.vacation-container .vacation-card.not-followed { order: 2; }
